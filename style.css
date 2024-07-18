@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.search-container {
+    margin: 1rem 0;
+}
+
+header input {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filters {
+    margin: 1rem 0;
+}
+
+.category-buttons {
+    margin-bottom: 1rem;
+}
+
+.category {
+    margin: 0 5px;
+    padding: 0.5rem;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category.active {
+    background-color: #28a745; /* Active category color */
+}
+
+.category:hover {
+    background-color: #777;
+}
+
+.price-filters input {
+    width: 100px;
+    padding: 0.5rem;
+    margin: 0 5px;
+}
+
+#sort {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-content {
+    padding: 1rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-category {
+    color: #888;
+    margin: 0.5rem 0;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.product-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart ion-icon {
+    margin-right: 0.5rem;
+}
+
+.product-rating {
+    font-size: 0.9rem;
+    color: #ff9800;
+}
